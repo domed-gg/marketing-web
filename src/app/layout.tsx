@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Head from 'next/head';
 import * as React from 'react';
 
 import '@/styles/globals.css';
@@ -43,8 +44,8 @@ export const metadata: Metadata = {
   },
   // authors: [
   //   {
-  //     name: 'Theodorus Clarence',
-  //     url: 'https://theodorusclarence.com',
+  //     name: 'domed team',
+  //     url: 'https://domed.gg',
   //   },
   // ],
 };
@@ -55,7 +56,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html className='bg-gray-950'>
+      <Head>
+        <link rel='icon' href='/favicon/favicon.ico' />
+        <meta name="apple-mobile-web-app-title" content="domed" />
+        <meta name="manifest" content="/favicon/site.webmanifest" />
+      </Head>
       <body>{children}</body>
     </html>
   );
