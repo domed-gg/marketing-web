@@ -1,8 +1,6 @@
 import Link, { LinkProps } from 'next/link';
 import * as React from 'react';
 
-import { cn } from '@/lib/utils';
-
 export type UnstyledLinkProps = {
   href: string;
   children: React.ReactNode;
@@ -39,7 +37,7 @@ const UnstyledLink = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
         rel='noopener noreferrer'
         href={href}
         {...rest}
-        className={cn('cursor-newtab', className)}
+        className={className}
       >
         {children}
       </a>
