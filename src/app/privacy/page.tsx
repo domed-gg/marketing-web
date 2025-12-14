@@ -6,7 +6,7 @@ import { Frame } from '@/app/components/frame';
 
 export default function PrivacyPage() {
   return (
-    <Frame>
+    <Frame activeUrl='/privacy'>
       <section className='pt-32 pb-24'>
         <div className='layout'>
           <div className='max-w-3xl mx-auto'>
