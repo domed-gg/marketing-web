@@ -58,6 +58,8 @@ export const Frame: FC<PropsWithChildren<{ navItems?: ReactNode; activeUrl?: str
               </UnstyledLink>
             </div>
           </div>
+        </div>
+        <div className='flex flex-col items-start justify-start gap-6 md:flex-row border-t border-gray-800 mt-8 pt-8'>
           <p className='text-sm text-gray-500'>
             © {new Date().getFullYear()} domed. All rights reserved.
           </p>
