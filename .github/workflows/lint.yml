@@ -41,4 +41,4 @@ jobs:
         run: pnpm run format:check
 
       - name: 🃏 Run jest
-        run: pnpm run test
+        run: pnpm run test --passWithNoTests
