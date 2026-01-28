@@ -76,7 +76,7 @@ export default function HomePage() {
       <section className='relative flex min-h-screen items-center justify-center pt-16'>
         <div className='layout py-24 text-center'>
           <p className='mb-4 text-sm font-medium uppercase tracking-widest text-gray-500'>
-            Anti-Cheat Protection
+            Server Side Anti-Cheat
           </p>
           <h1 className='mx-auto max-w-4xl text-5xl font-bold leading-tight text-white md:text-7xl'>
             Protect Your Game.
