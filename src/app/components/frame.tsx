@@ -1,10 +1,13 @@
-import { PropsWithChildren, type FC, type ReactNode } from 'react';
+import { type FC, type ReactNode, PropsWithChildren } from 'react';
+
+import { cn } from '@/lib/utils';
 
 import ButtonLink from '@/components/links/ButtonLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
-import { cn } from '@/lib/utils';
 
-export const Frame: FC<PropsWithChildren<{ navItems?: ReactNode; activeUrl?: string; }>> = ({ navItems, children, activeUrl = '/' }) => (
+export const Frame: FC<
+  PropsWithChildren<{ navItems?: ReactNode; activeUrl?: string }>
+> = ({ navItems, children, activeUrl = '/' }) => (
   <main className='bg-gray-950'>
     {/* Navigation */}
     <nav className='fixed top-0 z-50 w-full border-b border-gray-800 bg-gray-950/80 backdrop-blur-sm'>
@@ -14,7 +17,12 @@ export const Frame: FC<PropsWithChildren<{ navItems?: ReactNode; activeUrl?: str
         </UnstyledLink>
         <div className='flex items-center gap-8'>
           {navItems}
-          <ButtonLink href='https://domed.app/login' variant='primary' size='sm' className='px-5 rounded-2xl'>
+          <ButtonLink
+            href='https://domed.app/login'
+            variant='primary'
+            size='sm'
+            className='px-5 rounded-2xl'
+          >
             Login
           </ButtonLink>
         </div>
@@ -29,25 +37,34 @@ export const Frame: FC<PropsWithChildren<{ navItems?: ReactNode; activeUrl?: str
       <div className='layout py-12'>
         <div className='flex flex-col items-start justify-between gap-6 md:flex-row'>
           <p className='text-xl font-bold text-white'>domed</p>
-          <div className="flex flex-col gap-8">
-            <p className='text-xs font-bold text-white uppercase tracking-widest'>Legal</p>
+          <div className='flex flex-col gap-8'>
+            <p className='text-xs font-bold text-white uppercase tracking-widest'>
+              Legal
+            </p>
 
             <UnstyledLink
               href='/privacy'
-              className={cn('text-sm text-gray-500 transition-colors hover:text-white', { 'text-white': activeUrl === '/privacy' })}
+              className={cn(
+                'text-sm text-gray-500 transition-colors hover:text-white',
+                { 'text-white': activeUrl === '/privacy' },
+              )}
             >
               Privacy
             </UnstyledLink>
             <UnstyledLink
               href='/terms'
-              className={cn('text-sm text-gray-500 transition-colors hover:text-white', { 'text-white': activeUrl === '/terms' })}
+              className={cn(
+                'text-sm text-gray-500 transition-colors hover:text-white',
+                { 'text-white': activeUrl === '/terms' },
+              )}
             >
               Terms
             </UnstyledLink>
-
           </div>
-          <div className="flex flex-col gap-8">
-            <p className='text-xs font-bold text-white uppercase tracking-widest'>developers</p>
+          <div className='flex flex-col gap-8'>
+            <p className='text-xs font-bold text-white uppercase tracking-widest'>
+              developers
+            </p>
 
             <div className='flex gap-8'>
               <UnstyledLink

@@ -23,4 +23,3 @@ Cookie Consent - If your website uses cookies beyond essential ones, you'll need
 International Transfers - If data leaves the EEA, ensure Standard Contractual Clauses (SCCs) or other approved mechanisms are in place.
 
 Contact Email - Set up privacy@domed.gg as mentioned in the policy to handle privacy inquiries.
-

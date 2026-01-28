@@ -59,8 +59,8 @@ export default function RootLayout({
     <html className='bg-gray-950'>
       <Head>
         <link rel='icon' href='/favicon/favicon.ico' />
-        <meta name="apple-mobile-web-app-title" content="domed" />
-        <meta name="manifest" content="/favicon/site.webmanifest" />
+        <meta name='apple-mobile-web-app-title' content='domed' />
+        <meta name='manifest' content='/favicon/site.webmanifest' />
       </Head>
       <body>{children}</body>
     </html>

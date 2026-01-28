@@ -3,6 +3,7 @@ import * as React from 'react';
 
 import ButtonLink from '@/components/links/ButtonLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
+
 import { Frame } from '@/app/components/frame';
 
 const features = [
@@ -47,28 +48,30 @@ const stats = [
 
 export default function HomePage() {
   return (
-    <Frame navItems={(
-      <>
-        <UnstyledLink
-          href='#features'
-          className='text-sm text-gray-400 transition-colors hover:text-white'
-        >
-          Features
-        </UnstyledLink>
-        <UnstyledLink
-          href='#stats'
-          className='text-sm text-gray-400 transition-colors hover:text-white'
-        >
-          Stats
-        </UnstyledLink>
-        <UnstyledLink
-          href='#pricing'
-          className='text-sm text-gray-400 transition-colors hover:text-white'
-        >
-          Pricing
-        </UnstyledLink>
-      </>
-    )}>
+    <Frame
+      navItems={
+        <>
+          <UnstyledLink
+            href='#features'
+            className='text-sm text-gray-400 transition-colors hover:text-white'
+          >
+            Features
+          </UnstyledLink>
+          <UnstyledLink
+            href='#stats'
+            className='text-sm text-gray-400 transition-colors hover:text-white'
+          >
+            Stats
+          </UnstyledLink>
+          <UnstyledLink
+            href='#pricing'
+            className='text-sm text-gray-400 transition-colors hover:text-white'
+          >
+            Pricing
+          </UnstyledLink>
+        </>
+      }
+    >
       {/* Hero Section */}
       <section className='relative flex min-h-screen items-center justify-center pt-16'>
         <div className='layout py-24 text-center'>
@@ -78,7 +81,9 @@ export default function HomePage() {
           <h1 className='mx-auto max-w-4xl text-5xl font-bold leading-tight text-white md:text-7xl'>
             Protect Your Game.
             <br />
-            <span className='text-primary-300 opacity-30'>Preserve Fair Play.</span>
+            <span className='text-primary-300 opacity-30'>
+              Preserve Fair Play.
+            </span>
           </h1>
           <p className='mx-auto mt-6 max-w-2xl text-lg text-gray-400'>
             Server-side anti cheat solution designed for CS2 tournaments. <br />
@@ -88,7 +93,11 @@ export default function HomePage() {
             <ButtonLink href='#contact' variant='primary'>
               Contact us
             </ButtonLink>
-            <ButtonLink href='#features' variant='ghost' className='text-gray-300 hover:text-white hover:bg-gray-800'>
+            <ButtonLink
+              href='#features'
+              variant='ghost'
+              className='text-gray-300 hover:text-white hover:bg-gray-800'
+            >
               Learn More
             </ButtonLink>
           </div>
@@ -100,12 +109,20 @@ export default function HomePage() {
         <div className='layout py-16'>
           <div className='grid grid-cols-2 gap-8 md:grid-cols-4'>
             {stats.map((stat) => (
-              <div key={stat.label} className='text-center flex justify-center flex-col items-center gap-4'>
+              <div
+                key={stat.label}
+                className='text-center flex justify-center flex-col items-center gap-4'
+              >
                 <p className='text-4xl font-bold text-white md:text-5xl'>
                   {stat.value}
                 </p>
                 <p className='text-sm text-gray-500'>{stat.label}</p>
-                <Shield color="white" className='text-center' height="48px" width="48px" />
+                <Shield
+                  color='white'
+                  className='text-center'
+                  height='48px'
+                  width='48px'
+                />
               </div>
             ))}
           </div>
@@ -123,7 +140,8 @@ export default function HomePage() {
               Built for Privacy & Security
             </h2>
             <p className='mx-auto mt-4 max-w-2xl text-gray-400 md:text-base max-md:text-sm'>
-              Anti-cheat that respects player privacy & provides maximum convenience.
+              Anti-cheat that respects player privacy & provides maximum
+              convenience.
             </p>
           </div>
           <div className='mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
@@ -162,7 +180,8 @@ export default function HomePage() {
                 Configure your server settings
               </h3>
               <p className='mt-2 text-gray-400'>
-                Configure an instance to watch your live game (Or how to feed the demos).
+                Configure an instance to watch your live game (Or how to feed
+                the demos).
               </p>
             </div>
             <div className='text-center'>
@@ -184,7 +203,8 @@ export default function HomePage() {
                 Detect & Monitor
               </h3>
               <p className='mt-2 text-gray-400'>
-                Start detecting cheaters and monitor game integrity in real-time or via post-game analysis.
+                Start detecting cheaters and monitor game integrity in real-time
+                or via post-game analysis.
               </p>
             </div>
           </div>
@@ -281,10 +301,10 @@ export default function HomePage() {
 
             {/* Enterprise Plan */}
             <div className='rounded-lg border border-gray-800 bg-gray-900 p-8'>
-              <h3 className='text-lg font-semibold text-white'>
-                Enterprise
-              </h3>
-              <p className='mt-2 text-gray-400'>For large tournament organizers</p>
+              <h3 className='text-lg font-semibold text-white'>Enterprise</h3>
+              <p className='mt-2 text-gray-400'>
+                For large tournament organizers
+              </p>
               <p className='mt-6'>
                 <span className='text-4xl font-bold text-white'>Custom</span>
               </p>
@@ -317,12 +337,14 @@ export default function HomePage() {
 
             {/* Ala Carte Plan */}
             <div className='rounded-lg border border-gray-800 bg-gray-900 p-8 col-span-3 text-center'>
-              <h3 className='text-lg font-semibold text-white'>
-                Ala Carte
-              </h3>
-              <p className='mt-2 text-gray-400'>Want some flexibility? Customize your plan to fit your needs.</p>
+              <h3 className='text-lg font-semibold text-white'>Ala Carte</h3>
+              <p className='mt-2 text-gray-400'>
+                Want some flexibility? Customize your plan to fit your needs.
+              </p>
               <p className='mt-6'>
-                <span className='text-4xl font-bold text-white opacity-50'>Coming Soon</span>
+                <span className='text-4xl font-bold text-white opacity-50'>
+                  Coming Soon
+                </span>
               </p>
             </div>
           </div>
@@ -340,18 +362,12 @@ export default function HomePage() {
             Contact our sales team to get started today.
           </p>
           <div className='mt-10 flex items-center justify-center gap-4'>
-            <ButtonLink
-              href='mailto:contact@domed.gg'
-              variant='light'
-            >
+            <ButtonLink href='mailto:contact@domed.gg' variant='light'>
               Contact Sales
             </ButtonLink>
           </div>
         </div>
       </section>
-
     </Frame>
-
-
   );
 }
