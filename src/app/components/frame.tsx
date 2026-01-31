@@ -68,7 +68,7 @@ export const Frame: FC<
 
             <div className='flex gap-8'>
               <UnstyledLink
-                href='https://docs.domed.gg'
+                href='https://docs.domed.ac'
                 className='text-sm text-gray-500 transition-colors hover:text-white'
               >
                 Documentation

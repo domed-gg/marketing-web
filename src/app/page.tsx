@@ -79,10 +79,10 @@ export default function HomePage() {
             Server Side Anti-Cheat
           </p>
           <h1 className='mx-auto max-w-4xl text-5xl font-bold leading-tight text-white md:text-7xl'>
-            Protect Your Game.
+            Protect your game,
             <br />
             <span className='text-primary-300 opacity-30'>
-              Preserve Fair Play.
+              and user privacy.
             </span>
           </h1>
           <p className='mx-auto mt-6 max-w-2xl text-lg text-gray-400'>
@@ -362,7 +362,7 @@ export default function HomePage() {
             Contact our sales team to get started today.
           </p>
           <div className='mt-10 flex items-center justify-center gap-4'>
-            <ButtonLink href='mailto:contact@domed.gg' variant='light'>
+            <ButtonLink href='mailto:contact@domed.ac' variant='light'>
               Contact Sales
             </ButtonLink>
           </div>

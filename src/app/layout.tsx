@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   // authors: [
   //   {
   //     name: 'domed team',
-  //     url: 'https://domed.gg',
+  //     url: 'https://domed.ac',
   //   },
   // ],
 };

@@ -209,10 +209,10 @@ export default function PrivacyPage() {
                 <p className='mt-6 text-gray-400'>
                   To exercise any of these rights, please contact us at{' '}
                   <UnstyledLink
-                    href='mailto:privacy@domed.gg'
+                    href='mailto:privacy@domed.ac'
                     className='text-primary-400 hover:text-primary-300'
                   >
-                    privacy@domed.gg
+                    privacy@domed.ac
                   </UnstyledLink>
                 </p>
               </section>
@@ -294,19 +294,19 @@ export default function PrivacyPage() {
                   <p className='text-gray-400'>
                     <strong className='text-white'>Email:</strong>{' '}
                     <UnstyledLink
-                      href='mailto:privacy@domed.gg'
+                      href='mailto:privacy@domed.ac'
                       className='text-primary-400 hover:text-primary-300'
                     >
-                      privacy@domed.gg
+                      privacy@domed.ac
                     </UnstyledLink>
                   </p>
                   <p className='mt-2 text-gray-400'>
                     <strong className='text-white'>General Inquiries:</strong>{' '}
                     <UnstyledLink
-                      href='mailto:contact@domed.gg'
+                      href='mailto:contact@domed.ac'
                       className='text-primary-400 hover:text-primary-300'
                     >
-                      contact@domed.gg
+                      contact@domed.ac
                     </UnstyledLink>
                   </p>
                 </div>

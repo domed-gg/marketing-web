@@ -498,19 +498,19 @@ export default function TermsPage() {
                   <p className='text-gray-400'>
                     <strong className='text-white'>Email:</strong>{' '}
                     <UnstyledLink
-                      href='mailto:legal@domed.gg'
+                      href='mailto:legal@domed.ac'
                       className='text-primary-400 hover:text-primary-300'
                     >
-                      legal@domed.gg
+                      legal@domed.ac
                     </UnstyledLink>
                   </p>
                   <p className='mt-2 text-gray-400'>
                     <strong className='text-white'>General Inquiries:</strong>{' '}
                     <UnstyledLink
-                      href='mailto:contact@domed.gg'
+                      href='mailto:contact@domed.ac'
                       className='text-primary-400 hover:text-primary-300'
                     >
-                      contact@domed.gg
+                      contact@domed.ac
                     </UnstyledLink>
                   </p>
                 </div>
